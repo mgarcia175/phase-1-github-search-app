@@ -9,11 +9,15 @@
 </head>
 <body>
   <div id='main'>
-
     <h2>GitHub Search</h2>
 
-    <form id='github-form'>
-      <input id='search' type='text' name='search'>
+    <form action="/action_page.php" id='github-form'>
+      <label for="search">Search for:</label>
+      <select name="searchFor" id="searchFor">
+        <option value="Users">User(s)</option>
+        <option value="Repos">Repositorie(s)</option>
+      </select>
+      <input id='search' type='text' name='search' placeholder="Username...">
       <input type='submit' name='submit'/>
     </form>
 
